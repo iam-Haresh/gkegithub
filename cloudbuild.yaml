@@ -21,7 +21,7 @@ steps:
       - 'get-credentials'
       - 'autopilot-cluster-1'
       - '--region'
-      - 'us-central1'
+      - 'us-west1'
       - '--project'
       - 'upgradlabs-1740997927286'
 
