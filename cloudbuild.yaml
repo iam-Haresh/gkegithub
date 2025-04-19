@@ -51,5 +51,6 @@ steps:
 
 images:
   - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/gke-webpage:latest'
+logsBucket: "gs://mybucket235dfh"
 
 
