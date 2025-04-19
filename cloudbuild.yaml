@@ -4,13 +4,13 @@ steps:
     args:
       - 'build'
       - '-t'
-      - 'us-central1-docker.pkg.dev/upgradlabs-1738334790345/amit23comp/gke-webpage:latest'
+      - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/gke-webpage:latest'
       - '.'
 
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'us-central1-docker.pkg.dev/upgradlabs-1738334790345/amit23comp/gke-webpage:latest'
+      - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/gke-webpage:latest'
 
   # Get GKE credentials
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -23,7 +23,7 @@ steps:
       - '--region'
       - 'us-central1'
       - '--project'
-      - 'upgradlabs-1738334790345'
+      - 'upgradlabs-1740997927286'
 
   # Deploy application to GKE
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -50,6 +50,6 @@ steps:
       - 'wide'
 
 images:
-  - 'us-central1-docker.pkg.dev/upgradlabs-1738334790345/amit23comp/gke-webpage:latest'
+  - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/gke-webpage:latest'
 
 
